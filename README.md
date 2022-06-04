@@ -20,5 +20,5 @@ An early education website for second graders
 # Collaborators
 
 {Provide a list of everyone on your team}
-* Federico Pregnolato
+* Anita Woodford
 # Useful Websites
