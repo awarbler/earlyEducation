@@ -21,5 +21,5 @@ from django.urls import path, include
 """DO NOT USE THIS URLS FOR WEBSITE USE  THE WEBSITE URLS THIS IS NOT TO BE EDITED. """
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('wesite.urls')),
+    path('', include('website.urls')),
 ]
