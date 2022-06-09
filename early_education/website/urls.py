@@ -6,6 +6,7 @@ from . import views
 # make updates here 
 
 urlpatterns = [
-    path('', views.home, name="home"),
+    path('', views.home, name= "home"),
+    
 
 ]
