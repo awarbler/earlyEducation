@@ -1,51 +1,53 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 
-<head>
-  <!-- Basic -->
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- Mobile Metas -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <!-- Site Metas -->
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
-
-  <title>Fanadesh</title>
-
-
-
-  <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-  <!-- progress barstle -->
-  <link rel="stylesheet" href="css/css-circular-prog-bar.css">
-  <!-- fonts style -->
-  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Raleway:400,600&display=swap" rel="stylesheet">
-  <!-- font wesome stylesheet -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet" />
-  <!-- responsive style -->
-  <link href="css/responsive.css" rel="stylesheet" />
-
-
-
-
-  <link rel="stylesheet" href="css/css-circular-prog-bar.css">
-
-
+  <head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+  
+    <title>Early Education</title>
+  
+  
+  
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="{% static 'website/css/bootstrap.css'%}" />
+    <!-- progress barstle CANNOT GET IT TO WORK-->
+    <!-- <link rel="stylesheet" href="{% static 'website/css/css-circular-prog-bar.css'%}"> -->
+    <!-- fonts style -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Raleway:400,600&display=swap" rel="stylesheet">
+    <!-- font wesome stylesheet -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!-- Custom styles for this template -->
+    <link href="{% static 'website/css/style.css'%}" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="{% static 'website/css/responsive.css'%}" rel="stylesheet" />
+  
+  
+  
+  <!-- cannot get this to work  -->
+    <!-- <link rel="stylesheet" href="% static 'website/css/css-circular-prog-bar.csss'%}"> -->
+  
+  
 </head>
 
 <body class="sub_page">
   <div class="top_container ">
     <!-- header section strats -->
+    <!-- header section strats -->
     <header class="header_section">
       <div class="container">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand" href="{% url 'home' %}">
             <span>
-              Fanadesh
+              Early Education
             </span>
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -57,14 +59,14 @@
             <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
               <ul class="navbar-nav  ">
                 <li class="nav-item active">
-                  <a class="nav-link" href="index.html"> Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="{% url 'home' %}"> Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item ">
                   <a class="nav-link" href="about.html"> About </a>
                 </li>
 
                 <li class="nav-item ">
-                  <a class="nav-link" href="admission.html"> Admission </a>
+                  <a class="nav-link" href="math.html"> Math </a>
                 </li>
 
                 <li class="nav-item">
@@ -91,7 +93,7 @@
         <div class="row">
           <div class="col-md-6">
             <div class="about_img-container">
-              <img src="images/about.png" alt="">
+                <img src="{% static 'website/images/about.png'%}" alt="">
             </div>
           </div>
           <div class="col-md-6">
@@ -127,7 +129,7 @@
   <section class="info_section layout_padding-top">
     <div class="info_logo-box">
       <h2>
-        Fanadesh
+        Early Education
       </h2>
     </div>
     <div class="container layout_padding2">
@@ -191,39 +193,39 @@
     </div>
     <div class="container">
       <div class="social_container">
-
+             
         <div class="social-box">
-          <a href="">
-            <img src="images/fb.png" alt="">
+          <a href="{% static 'website/images/fb.png '%}">
+            <!-- <img src="images/fb.png" alt=""> -->
           </a>
 
-          <a href="">
-            <img src="images/twitter.png" alt="">
+          <a href="http://twitter.com">
+            <img src="{% static 'website/images/twitter.png'%}" alt="">
           </a>
-          <a href="">
-            <img src="images/linkedin.png" alt="">
+          <a href="http://linkedin.com">
+            <img src="{% static 'website/images/linkedin.png'%}" alt="">
           </a>
-          <a href="">
-            <img src="images/instagram.png" alt="">
+          <a href="http://instagram.com">
+            <img src="{% static 'website/images/instagram.png'%}" alt="">
           </a>
         </div>
       </div>
-    </div>
-  </section>
+</div>
+</section>
 
   <!-- footer section -->
-  <section class="container-fluid footer_section">
-    <p>
-      Copyright &copy; 2019 All Rights Reserved By
-      <a href="https://html.design/">Free Html Templates</a>
-    </p>
+<section class="container-fluid footer_section">
+  <p>
+    Copyright &copy; 2019 All Rights Reserved By
+    <a href="https://html.design/">Free Html Templates</a>
+  </p>
   </section>
   <!-- footer section -->
-
-  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.js"></script>
-
-
-</body>
-
-</html>
+  
+  <script type="text/javascript" src="{% static 'website/js/jquery-3.4.1.min.js'%}"></script>
+  <script type="text/javascript" src="{% static 'website/js/bootstrap.js'%}"></script>
+  
+  
+  </body>
+  
+  </html>
