@@ -10,7 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
-from curses.ascii import EM
+
 from pathlib import Path
 from pickle import FALSE, TRUE
 
