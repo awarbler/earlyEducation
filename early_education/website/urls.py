@@ -10,7 +10,7 @@ urlpatterns = [
     path('reading.html', views.reading, name= "reading"),
     path('science.html', views.science, name= "science"),
     path('math.html', views.math, name= "math"),
-    path('why.html', views.why, name= "why"),
+    path('addition.html', views.addition, name= "addition"),
 
 
 

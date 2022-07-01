@@ -49,7 +49,7 @@ def science(request):
     return render(request, 'science.html', {})
 
     # Create your views here.
-def why(request):
-    return render(request, 'why.html', {})    
+def addition(request):
+    return render(request, 'addition.html', {})    
 
 
