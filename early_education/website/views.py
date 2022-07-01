@@ -7,7 +7,7 @@ def home(request):
     return render(request, 'home.html', {})
 
 # Create your views here.
-def contact(request):
+def reading(request):
     # pass in 
     if request.method == "POST":
         messageNames = request.POST['messageNames']
@@ -30,23 +30,23 @@ def contact(request):
             
         
         
-        return render(request, 'contact.html', {'messageNames':messageNames, 'email': email, 'phone': phone, 'message':message})
+        return render(request, 'reading.html', {'messageNames':messageNames, 'email': email, 'phone': phone, 'message':message})
         
     else:
         # return the page 
-        return render(request, 'contact.html', {})
+        return render(request, 'reading.html', {})
 
 # Create your views here.
 def math(request):
     return render(request, 'math.html', {})
 
 # Create your views here.
-def contact(request):
-    return render(request, 'contact.html', {})
+def reading(request):
+    return render(request, 'reading.html', {})
 
     # Create your views here.
-def about(request):
-    return render(request, 'about.html', {})
+def science(request):
+    return render(request, 'science.html', {})
 
     # Create your views here.
 def why(request):
