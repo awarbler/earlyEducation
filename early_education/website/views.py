@@ -36,7 +36,6 @@ def reading(request):
         # return the page 
         return render(request, 'reading.html', {})
 
-        
 def addition(request): # backend ADDITION PAGE
 	# generate random numbers whole numbers frm python
 	from random import randint
