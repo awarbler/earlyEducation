@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-
+<img src="{% static 'website/images/My.png'%}" alt="">
 
 <center>
   <br/><br/>
@@ -17,7 +17,8 @@
 {% endif %}	
 <br/><br/><br/>
 
-<h1><img src="tatic/website/images/s{{num_1}}.png"> + <img src="static/website/images/{{num_2}}.png"></h1>
+
+<h1><img src="static/website/images/s{{num_1}}.png"> + <img src="static/website/images/{{num_2}}.png"></h1>
 <br/>
 <br/><br/>
 
