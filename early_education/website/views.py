@@ -13,8 +13,8 @@ def addition(request): # backend ADDITION PAGE
 	from random import randint
 
 	# create variables
-	num_1 = randint(0,10)
-	num_2 = randint(0,10)
+	num_1 = randint(0,9)
+	num_2 = randint(0,9)
 
 	# IF REQUEST METHOD IS A POST 
 	if request.method == "POST":
