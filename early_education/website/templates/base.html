@@ -1,57 +1,178 @@
-<!doctype html>
-<html lang="en">
+{% load static %}
+<!DOCTYPE html>
+<html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{% block title %}Early Education{% endblock %}</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Early Education</title>
+  
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="{% static 'website/css/bootstrap.css'%}" />
+    <!-- progress barstle CANNOT GET IT TO WORK-->
+    <!-- <link rel="stylesheet" href="{% static 'website/css/css-circular-prog-bar.css'%}"> -->
+    <!-- fonts style -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Raleway:400,600&display=swap" rel="stylesheet">
+    <!-- font wesome stylesheet -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!-- Custom styles for this template -->
+    <link href="{% static 'website/css/style.css'%}" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="{% static 'website/css/responsive.css'%}" rel="stylesheet" />
+  <!-- cannot get this to work  -->
+    <!-- <link rel="stylesheet" href="% static 'website/css/css-circular-prog-bar.csss'%}"> -->
   </head>
-  <body>
-    <!--Nav Bar-->
-    <nav class="navbar navbar-expand-lg bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+<body class="sub_page">
+  <div class="top_container ">
+    <!-- header section strats -->
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="{% url 'home' %}">
+            <span>
+              Early Education
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="{% url 'home' %}"> Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="{% url 'science' %}"> Science </a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="{% url 'math' %}"> Math </a>
+                </li>
+                <!-- <li class="nav-item">
+                  <a class="nav-link" href="addition.html"> Why Us </a>
+                </li> -->
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'reading' %}"> Reading</a>
+                </li>
               </ul>
+            </div>
+        </nav>
+      </div>
+    </header>
+  </div>
+{% block content %}
+
+{% endblock %}
+
+<section class="info_section layout_padding-top">
+  <div class="info_logo-box">
+    <h2>
+        Early Education
+    </h2>
+  </div>
+    <div class="container layout_padding2">
+      <div class="row">
+        <div class="col-md-3">
+          <h5>
+              About Us                                                                             
+          </h5>
+         <p>
+            dolor sit amet, consectetur magna aliqua. Ut enim ad minim veniam, quisdotempor incididunt r 
+         </p>
+        </div>
+        <div class="col-md-3">
+          <h5>
+              Useful Link 
+          </h5>
+          <ul>
+            <li>
+              <a href="">
+                  Video games
+              </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
+            <li>
+             <a href="">
+                Remote control
+             </a>
+            </li>
+            <li>
+              <a href="">
+                  3d controller
+              </a>
             </li>
           </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+        </div>
+        <div class="col-md-3">
+          <h5>
+              Contact Us
+          </h5>
+          <p>
+              dolor sit amet, consectetur magna aliqua. quisdotempor incididunt ut e 
+          </p>
+        </div>
+        <div class="col-md-3">
+     
+          <div class="subscribe_container">
+            <h5>
+                Newsletter
+            </h5>
+            <div class="form_container">
+              <form action="">
+                <input type="email" placeholder="Enter your email">
+                <button type="submit">
+                  Subscribe
+                </button>
+              </form>
+            </div>
+          </div>
+          
         </div>
       </div>
-    </nav>
- <!-- adding margins to the page -->
- <br/>
-  <div class = "container">
-    {% block content %}
-    {% endblock %}
-  </div>
+    </div>
+    <div class="container">
+        <div class="social_container">
+           
+            <div class="social-box">
+              <a href="{% static 'website/images/fb.png '%}">
+                <!-- <img src="images/fb.png" alt=""> -->
+              </a>
+
+              <a href="http://twitter.com">
+                <img src="{% static 'website/images/twitter.png'%}" alt="">
+              </a>
+              <a href="http://linkedin.com">
+                <img src="{% static 'website/images/linkedin.png'%}" alt="">
+              </a>
+              <a href="http://instagram.com">
+                <img src="{% static 'website/images/instagram.png'%}" alt="">
+              </a>
+            </div>
+          </div>
+    </div>
+  </section>
+
+<!-- footer section -->
+<section class="container-fluid footer_section">
+<p>
+Copyright &copy; 2019 All Rights Reserved By
+<a href="https://html.design/">Free Html Templates</a>
+</p>
+</section>
+<!-- footer section -->
+
+<script type="text/javascript" src="{% static 'website/js/jquery-3.4.1.min.js'%}"></script>
+<script type="text/javascript" src="{% static 'website/js/bootstrap.js'%}"></script>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-  </body>
+</body>
+
 </html>
