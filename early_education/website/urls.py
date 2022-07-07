@@ -11,6 +11,7 @@ urlpatterns = [
     path('science.html', views.science, name= "science"),
     path('math.html', views.math, name= "math"),
     path('addition.html', views.addition, name= "addition"),
+    path('subtraction.html', views.subtraction, name= "subtraction"),
 
 
 

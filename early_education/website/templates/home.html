@@ -1,6 +1,5 @@
 {% load static %}
 
-
 <!DOCTYPE html>
 <html>
 
@@ -63,19 +62,16 @@
                   <a class="nav-link" href="{% url 'home' %}"> Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item ">
-                  <a class="nav-link" href="science.html"> Science </a>
+                  <a class="nav-link" href="{% url 'science' %}"> Science </a>
                 </li>
-
                 <li class="nav-item ">
-                  <a class="nav-link" href="math.html"> Math </a>
+                  <a class="nav-link" href="{% url 'math' %}"> Math </a>
                 </li>
-
                 <!-- <li class="nav-item">
-                  <a class="nav-link" href="addition.html"> addition </a>
+                  <a class="nav-link" href="addition.html"> Why Us </a>
                 </li> -->
-
                 <li class="nav-item">
-                  <a class="nav-link" href="reading.html">Reading</a>
+                  <a class="nav-link" href="{% url 'reading' %}"> Reading</a>
                 </li>
 
               </ul>

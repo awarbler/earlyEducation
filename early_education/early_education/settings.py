@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 
 from pathlib import Path
-from pickle import FALSE, TRUE
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -126,19 +126,3 @@ STATICFILES_DIRS = [BASE_DIR / 'static',]
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-# or google.com lets not doe this 
-# EMAIL_HOST = 'smtp.gmail.com'
-# EMAIL_PORT = 587
-# EMAIL_HOST_USER = 'TXWARBLER@GMAIL.COM'
-# EMAIL_HOST_PASSWORD = 'ABCDEFGHIJK'
-# EMAIL_USE_TLS = TRUE
-# EMAIL_USE_SSL = FALSE
-
-# local host 
-# python -m smtpd -n -c DebuggingServer localhost:1025
-# EMAIL_HOST = 'localhost'
-# EMAIL_PORT = 1025
-# EMAIL_HOST_USER = ''
-# EMAIL_HOST_PASSWORD = ''
-# EMAIL_USE_TLS = FALSE
-# EMAIL_USE_SSL = FALSE
