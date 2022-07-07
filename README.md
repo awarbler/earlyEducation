@@ -21,4 +21,5 @@ An early education website for second graders
 
 {Provide a list of everyone on your team}
 * Anita Woodford
+* Stephen Nielsen
 # Useful Websites
