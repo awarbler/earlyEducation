@@ -12,6 +12,7 @@ urlpatterns = [
     path('math.html', views.math, name= "math"),
     path('addition.html', views.addition, name= "addition"),
     path('subtraction.html', views.subtraction, name= "subtraction"),
+    path('multiplication.html',views.multiplication, name="multiplication"),
 
 
 
