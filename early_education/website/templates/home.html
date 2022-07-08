@@ -14,7 +14,7 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
   
-    <title>Early Education </title>
+    <title>Early Education</title>
   
   
   
@@ -43,7 +43,7 @@
   <div class="top_container">
     <!-- header section strats -->
     <header class="header_section">
-      <div class="container">
+      <div class="container header-nav">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
           <a class="navbar-brand" href="{% url 'home' %}">
             <span>
@@ -62,18 +62,17 @@
                   <a class="nav-link" href="{% url 'home' %}"> Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item ">
-                  <a class="nav-link" href="{% url 'science' %}"> Science </a>
-                </li>
-                <li class="nav-item ">
                   <a class="nav-link" href="{% url 'math' %}"> Math </a>
                 </li>
-                <!-- <li class="nav-item">
-                  <a class="nav-link" href="addition.html"> Why Us </a>
-                </li> -->
                 <li class="nav-item">
                   <a class="nav-link" href="{% url 'reading' %}"> Reading</a>
                 </li>
-
+                <li class="nav-item active">
+                  <a class="nav-link" href="{% url 'about' %}"> About</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="{% url 'contact' %}"> Contact Us</a>
+                </li>
               </ul>
             </div>
         </nav>
@@ -83,18 +82,15 @@
       <div class="hero-container container">
         <div class="hero_detail-box">
           <h1>
-            Best way
-            to fund
-            your study
-            abroad
+            Welcome to Early Education!
           </h1>
           <p>
-            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua. Ut enim ad minim veniam
+            Improve your child's academic skills! Our online tests in Math and Reading will help your little learner improve their 
+            skills to set them on the right track for a successful lifetime of learning! 
           </p>
           <div class="hero_btn-continer">
-            <a href="" class="call_to-btn btn_white-border">
-              Read More
+            <a href="{% url 'about' %}" class="call_to-btn btn_white-border">
+              Learn More
             </a>
           </div>
         </div>
@@ -110,7 +106,7 @@
 
   <div class="common_style">
 
-    <!-- science section -->
+    <!-- about section -->
     <section class="about_section">
       <div class="container">
         <div class="row">
@@ -123,18 +119,14 @@
           <div class="col-md-6">
             <div class="about_detail-box">
               <h3>
-                About our School
+                Why Learn with Early Education?
               </h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                With Early Education, our students are being presented with the very best teaching methods that both researchers and 
+                teachers have developed over time. Our program is built to keep your little learners engaged and having fun, all while 
+                learning vital concepts to strengthen their adademic success. There are many early educational programs out there to 
+                teach and instruct your child. Be sure you're getting the very best education for them by using the Early Education program!
               </p>
-              <div class="">
-                <a href="" class="call_to-btn btn_white-border">
-                  Read More
-                </a>
-              </div>
             </div>
           </div>
         </div>
@@ -154,13 +146,13 @@
                 Math
               </h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                A vital, core portion of a child's early-stage academic development. This section is carefully hand-crafted and will 
+                go through various types of beginner-level math, including Addition, Subtraction, and Multiplication. This section will
+                provide your child with many hours of flashcard practice, helping them to learn and retain their understanding of mathematical concepts.
               </p>
               <div class="">
                 <a href="{% url 'math' %}" class="call_to-btn btn_white-border">
-                  Read More
+                  Start Math
                 </a>
               </div>
             </div>
@@ -190,16 +182,16 @@
           <div class="col-md-6">
             <div class="why_detail-box">
               <h3>
-                Why learn on Early Education
+                Reading
               </h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                Another core portion of a child's early-stage academic development. This section will tackle reading comprehension
+                and help your child to understand and be able to describe exactly what it was they read about. This structured section
+                is aimed at providing hours of beneficial practice to give your child an excellent head-start in reading.
               </p>
               <div class="">
-                <a href="" class="call_to-btn btn_white-border">
-                  Read More
+                <a href="{% url 'reading' %}" class="call_to-btn btn_white-border">
+                  Start Reading
                 </a>
               </div>
             </div>
@@ -218,18 +210,13 @@
           <div class="col-md-6">
             <div class="determine_detail-box">
               <h3>
-                Determine the right for you
+                Is this program for you?
               </h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                We believe that all children will benefit from this amazing learning program! But we don't want to just TELL you, 
+                we want to SHOW you! When you sign up, you get 1 month of FREE ACCESS to our content! Our program contains well over 100 hours of
+                hand-picked content to help your child succeed.
               </p>
-              <div class="">
-                <a href="" class="call_to-btn btn_white-border">
-                  Read More
-                </a>
-              </div>
             </div>
           </div>
           <div class="col-md-6">
@@ -251,7 +238,7 @@
   <!-- client section -->
   <section class="client_section layout_padding">
     <h2 class="">
-      Testimonial
+      Testimonials
     </h2>
     <div class="container">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -265,18 +252,17 @@
                   <div class="row">
                       <div class="col-md-3">
                         <div class="client_img-box">
-                          <img src="{% static 'website/images/client.png'%}" alt="">
+                          <img src="{% static 'website/images/client1.png'%}" alt="">
                         </div>
                       </div>
                       <div class="col-md-9">
                         <div class="client_detail-box">
                           <h5>
-                            Alex Du
+                            Melissa Phillips
                           </h5>
                           <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                            What an amazing program this is! My son was able to excel in his class thanks to Early Education! 
+                            It was easy to get started and I saw improvement in my son right away. I highly recommend this for any child!
                           </p>
                         </div>
                       </div>
@@ -286,18 +272,18 @@
                   <div class="row">
                       <div class="col-md-3">
                         <div class="client_img-box">
-                          <img src="{% static 'website/images/client.png'%}" alt="">
+                          <img src="{% static 'website/images/client3.png'%}" alt="">
                         </div>
                       </div>
                       <div class="col-md-9">
                         <div class="client_detail-box">
                           <h5>
-                            Alex Du
+                            David Steele
                           </h5>
                           <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                            We got our grandkids started on this program, and it completely changed the way they felt about school!
+                            They started to become interested in math again because the concepts taught in this program would break
+                            the problems down into easy-to-handle sections.
                           </p>
                         </div>
                       </div>
@@ -307,18 +293,17 @@
                   <div class="row">
                       <div class="col-md-3">
                         <div class="client_img-box">
-                          <img src="{% static 'website/images/client.png'%}" alt="">
+                          <img src="{% static 'website/images/client2.png'%}" alt="">
                         </div>
                       </div>
                       <div class="col-md-9">
                         <div class="client_detail-box">
                           <h5>
-                            Alex Du
+                            Sherry Smith
                           </h5>
                           <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                            My daughter struggled in reading comprehension, but Early Education made reading fun and easy to learn. 
+                            After just a few lessons my daughter showed significant improvement! Early Education's teach method is top-notch!
                           </p>
                         </div>
                       </div>
@@ -333,141 +318,92 @@
 
   <!-- end client section -->
 
+      
+      <!-- Footer Section -->
 
-    <!-- contact section -->
+  <section class="info_section layout_padding-top">
+    <div class="info_logo-box">
+      <h2>
+        Early Education
+      </h2>
+    </div>
+    <div class="container layout_padding2">
+      <div class="row justify-content-center">
+        
+        <div class="col-md-3">
+          <h5>
+            Education Links
+          </h5>
+          <ul>
+            <li>
+              <a href="https://www.abcmouse.com/" target="_blank">
+                ABC Mouse
+              </a>
+            </li>
+            <li>
+              <a href="https://www.ixl.com/" target="_blank">
+                IXL Personalized Learning
+              </a>
+            </li>
+            <li>
+              <a href="https://www.scholastic.com/" target="_blank">
+                Scholastic
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>
+            Contact Us
+          </h5>
+          <p>
+            Email:<br>
+            abc@earlyeducation.com<br><br>
+            Mail:<br>
+            123 Education Parkway<br>
+            Middletown, USA 12345
+          </p>
+        </div>
+        <div class="col-md-3">
 
-    <section class="contact_section ">
-
-        <div class="container">
-         
-          <div class="row">
-            <div class="col-md-6">
-              <div class="d-flex justify-content-center d-md-block">
-                <h2>
-                  Contact Us
-                </h2>
-              </div>
-              <form action="">
-                <div class="contact_form-container">
-                  <div>
-                    <div>
-                      <input type="text" placeholder="Name">
-                    </div>
-                    <div>
-                      <input type="email" placeholder="Email">
-                    </div>
-                    <div>
-                      <input type="text" placeholder="Phone Number">
-                    </div>
-                    <div class="mt-5">
-                      <input type="text" placeholder="Message">
-                    </div>
-                    <div class="mt-5">
-                      <button type="submit">
-                        send
-                      </button>
-                    </div>
-                  </div>
-    
-                </div>
-    
+          <div class="subscribe_container">
+            <h5>
+              Newsletter
+            </h5>
+            <div class="form_container">
+              <form action="{% url 'subscribe' %}">
+                <input type="email" placeholder="Enter your email">
+                <button type="submit">
+                  Subscribe
+                </button>
               </form>
             </div>
-            <div class="col-md-6">
-              <div class="contact_img-box">
-                <img src="{% static 'website/images/students.jpg'%}" alt="">
-              </div>
-            </div>
           </div>
+
         </div>
-      </section>
-      <!-- end contact section -->
-      <section class="info_section layout_padding-top">
-        <div class="info_logo-box">
-          <h2>
-              Early Education
-          </h2>
+      </div>
+    </div>
+    <div class="container">
+      <div class="social_container">
+             
+        <div class="social-box">
+          <a href="{% static 'website/images/fb.png '%}">
+            <!-- <img src="images/fb.png" alt=""> -->
+          </a>
+
+          <a href="http://twitter.com">
+            <img src="{% static 'website/images/twitter.png'%}" alt="">
+          </a>
+          <a href="http://linkedin.com">
+            <img src="{% static 'website/images/linkedin.png'%}" alt="">
+          </a>
+          <a href="http://instagram.com">
+            <img src="{% static 'website/images/instagram.png'%}" alt="">
+          </a>
         </div>
-          <div class="container layout_padding2">
-            <div class="row">
-              <div class="col-md-3">
-                <h5>
-                    About Us                                                                             
-                </h5>
-               <p>
-                  dolor sit amet, consectetur magna aliqua. Ut enim ad minim veniam, quisdotempor incididunt r 
-               </p>
-              </div>
-              <div class="col-md-3">
-                <h5>
-                    Useful Link 
-                </h5>
-                <ul>
-                  <li>
-                    <a href="">
-                        Video games
-                    </a>
-                  </li>
-                  <li>
-                   <a href="">
-                      Remote control
-                   </a>
-                  </li>
-                  <li>
-                    <a href="">
-                        3d controller
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-md-3">
-                <h5>
-                    Contact Us
-                </h5>
-                <p>
-                    dolor sit amet, consectetur magna aliqua. quisdotempor incididunt ut e 
-                </p>
-              </div>
-              <div class="col-md-3">
-           
-                <div class="subscribe_container">
-                  <h5>
-                      Newsletter
-                  </h5>
-                  <div class="form_container">
-                    <form action="">
-                      <input type="email" placeholder="Enter your email">
-                      <button type="submit">
-                        Subscribe
-                      </button>
-                    </form>
-                  </div>
-                </div>
-                
-              </div>
-            </div>
-          </div>
-          <div class="container">
-              <div class="social_container">
-                 
-                  <div class="social-box">
-                    <a href="{% static 'website/images/fb.png '%}">
-                      <!-- <img src="images/fb.png" alt=""> -->
-                    </a>
-      
-                    <a href="http://twitter.com">
-                      <img src="{% static 'website/images/twitter.png'%}" alt="">
-                    </a>
-                    <a href="http://linkedin.com">
-                      <img src="{% static 'website/images/linkedin.png'%}" alt="">
-                    </a>
-                    <a href="http://instagram.com">
-                      <img src="{% static 'website/images/instagram.png'%}" alt="">
-                    </a>
-                  </div>
-                </div>
-          </div>
-        </section>
+      </div>
+    </div>
+  </section>
 
   <!-- footer section -->
   <section class="container-fluid footer_section">

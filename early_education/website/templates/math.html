@@ -12,7 +12,7 @@
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Early Education</title>
+    <title>Early Education - Math</title>
   
     <!-- bootstrap core css -->
     <link rel="stylesheet" type="text/css" href="{% static 'website/css/bootstrap.css'%}" />
@@ -54,16 +54,16 @@
                   <a class="nav-link" href="{% url 'home' %}"> Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item ">
-                  <a class="nav-link" href="{% url 'science' %}"> Science </a>
-                </li>
-                <li class="nav-item ">
                   <a class="nav-link" href="{% url 'math' %}"> Math </a>
                 </li>
-                <!-- <li class="nav-item">
-                  <a class="nav-link" href="addition.html"> Why Us </a>
-                </li> -->
                 <li class="nav-item">
                   <a class="nav-link" href="{% url 'reading' %}"> Reading</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="{% url 'about' %}"> About</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="{% url 'contact' %}"> Contact Us</a>
                 </li>
               </ul>
             </div>
@@ -114,93 +114,91 @@
     <!-- end admission section -->
   </div>
 
-  <!-- info section -->
+  <!-- Footer Section -->
+
   <section class="info_section layout_padding-top">
     <div class="info_logo-box">
       <h2>
-          Early Education
+        Early Education
       </h2>
     </div>
-      <div class="container layout_padding2">
-        <div class="row">
-          <div class="col-md-3">
+    <div class="container layout_padding2">
+      <div class="row justify-content-center">
+        
+        <div class="col-md-3">
+          <h5>
+            Education Links
+          </h5>
+          <ul>
+            <li>
+              <a href="https://www.abcmouse.com/" target="_blank">
+                ABC Mouse
+              </a>
+            </li>
+            <li>
+              <a href="https://www.ixl.com/" target="_blank">
+                IXL Personalized Learning
+              </a>
+            </li>
+            <li>
+              <a href="https://www.scholastic.com/" target="_blank">
+                Scholastic
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>
+            Contact Us
+          </h5>
+          <p>
+            Email:<br>
+            abc@earlyeducation.com<br><br>
+            Mail:<br>
+            123 Education Parkway<br>
+            Middletown, USA 12345
+          </p>
+        </div>
+        <div class="col-md-3">
+
+          <div class="subscribe_container">
             <h5>
-                Math                                                                           
+              Newsletter
             </h5>
-           <p>
-            Learn basic math skills! 
-           </p>
-          </div>
-          <div class="col-md-3">
-            <h5>
-                Useful Link 
-            </h5>
-            <ul>
-              <li>
-                <a href="">
-                    Video games
-                </a>
-              </li>
-              <li>
-               <a href="">
-                  Remote control
-               </a>
-              </li>
-              <li>
-                <a href="">
-                    3d controller
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-3">
-            <h5>
-                Contact Us
-            </h5>
-            <p>
-                dolor sit amet, consectetur magna aliqua. quisdotempor incididunt ut e 
-            </p>
-          </div>
-          <div class="col-md-3">
-       
-            <div class="subscribe_container">
-              <h5>
-                  Newsletter
-              </h5>
-              <div class="form_container">
-                <form action="">
-                  <input type="email" placeholder="Enter your email">
-                  <button type="submit">
-                    Subscribe
-                  </button>
-                </form>
-              </div>
+            <div class="form_container">
+              <form action="{% url 'subscribe' %}">
+                <input type="email" placeholder="Enter your email">
+                <button type="submit">
+                  Subscribe
+                </button>
+              </form>
             </div>
-            
           </div>
+
         </div>
       </div>
-      <div class="container">
-          <div class="social_container">
+    </div>
+    <div class="container">
+      <div class="social_container">
              
-              <div class="social-box">
-                <a href="{% static 'website/images/fb.png '%}">
-                  <!-- <img src="images/fb.png" alt=""> -->
-                </a>
-  
-                <a href="http://twitter.com">
-                  <img src="{% static 'website/images/twitter.png'%}" alt="">
-                </a>
-                <a href="http://linkedin.com">
-                  <img src="{% static 'website/images/linkedin.png'%}" alt="">
-                </a>
-                <a href="http://instagram.com">
-                  <img src="{% static 'website/images/instagram.png'%}" alt="">
-                </a>
-              </div>
-            </div>
+        <div class="social-box">
+          <a href="{% static 'website/images/fb.png '%}">
+            <!-- <img src="images/fb.png" alt=""> -->
+          </a>
+
+          <a href="http://twitter.com">
+            <img src="{% static 'website/images/twitter.png'%}" alt="">
+          </a>
+          <a href="http://linkedin.com">
+            <img src="{% static 'website/images/linkedin.png'%}" alt="">
+          </a>
+          <a href="http://instagram.com">
+            <img src="{% static 'website/images/instagram.png'%}" alt="">
+          </a>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
 <!-- footer section -->
 <section class="container-fluid footer_section">

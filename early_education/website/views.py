@@ -165,10 +165,20 @@ def math(request):
 def reading(request):
     return render(request, 'reading.html', {})
 
-    # Create your views here.
-def science(request):
-    return render(request, 'science.html', {})
+# Create your views here.
+def about(request):
+    return render(request, 'about.html', {})
 
-  
+# Create your views here.
+def contact(request):
+	return render(request, 'contact.html', {})
+
+# Create your views here.
+def confirmation(request):
+	return render(request, 'confirmation.html', {})
+
+# Create your views here.
+def subscribe(request):
+	return render(request, 'subscribe.html', {})
 
 
