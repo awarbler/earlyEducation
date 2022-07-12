@@ -206,9 +206,13 @@ def reading(request):
 			'spelling_word': spelling_word,
 			})
 
-    # Create your views here.
-def science(request):
-    return render(request, 'science.html', {})
+# Create your views here.
+def about(request):
+    return render(request, 'about.html', {})
+
+# Create your views here.
+def contact(request):
+	return render(request, 'contact.html', {})
 
 
 spelling_list = [
@@ -230,4 +234,11 @@ spelling_list = [
 ]
   
 
+# Create your views here.
+def confirmation(request):
+	return render(request, 'confirmation.html', {})
+  
 
+# Create your views here.
+def subscribe(request):
+	return render(request, 'subscribe.html', {})
