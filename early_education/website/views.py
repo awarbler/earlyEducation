@@ -78,7 +78,7 @@ def subtraction(request):
 		if not answer:
 			my_answer = "Please try again! "
 			color = 'warning'
-			return render(request, 'division.html', {
+			return render(request, 'subtraction.html', {
 			'answer':answer,
 			'my_answer':my_answer,
 			'num_1': num_1,
@@ -127,7 +127,7 @@ def multiplication(request):
 		if not answer:
 			my_answer = "Please try again! "
 			color = 'warning'
-			return render(request, 'division.html', {
+			return render(request, 'multiplication.html', {
 			'answer':answer,
 			'my_answer':my_answer,
 			'num_1': num_1,
@@ -179,7 +179,7 @@ def reading(request):
 		if not answer:
 			my_answer = "Please try again! "
 			color = 'warning'
-			return render(request, 'division.html', {
+			return render(request, 'reading.html', {
 			'answer':answer,
 			'my_answer':my_answer,
 			'spelling_word': spelling_word,
@@ -195,14 +195,14 @@ def reading(request):
 			color = "danger " # color of the pop up box from boostrap
 
 		# CONTEXT DICTIONARY returns to the screen 
-		return render(request, 'multiplication.html', {
+		return render(request, 'reading.html', {
 			'answer':answer,
 			'my_answer':my_answer,
 			'spelling_word': spelling_word,
 			'color': color, # pass in color for pop up box 
 			}) 
 	# initial start 
-	return render(request,'multiplication.html', {
+	return render(request,'reading.html', {
 			'spelling_word': spelling_word,
 			})
 
