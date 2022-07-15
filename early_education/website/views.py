@@ -163,7 +163,27 @@ def math(request):
 
 # Create your views here.
 def reading(request):
-    # generate random numbers whole numbers frm python
+
+	# define spelling list
+	spelling_list = [
+		"barn",
+		"couches",
+		"dock",
+		"dreamer",
+		"dress",
+		"earth",
+		"germ",
+		"island",
+		"paragraph",
+		"shark",
+		"shrimp",
+		"swamp",
+		"table",
+		"tool",
+		"whale"
+	]
+
+    # generate random numbers whole numbers from python
 	from random import randint
 
 	# create variables
@@ -215,23 +235,7 @@ def contact(request):
 	return render(request, 'contact.html', {})
 
 
-spelling_list = [
-	"barn",
-	"couches",
-	"dock",
-	"dreamer",
-	"dress",
-	"earth",
-	"germ",
-	"island",
-	"paragraph",
-	"shark",
-	"shrimp",
-	"swamp",
-	"table",
-	"tool",
-	"whale"
-]
+
   
 
 # Create your views here.
