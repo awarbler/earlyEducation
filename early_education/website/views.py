@@ -194,7 +194,7 @@ def reading(request):
 		# GRAB IN THE FORM AND STICK IN VARIABLE
 		answer = request.POST['answer']
 		# pass num1 and num2 from frontend
-		spelling_img = request.POST['spelling_img']
+		spelling_img_old = request.POST['spelling_img']
 		# error handling if the answer is empty
 		if not answer:
 			my_answer = "Please try again! "
@@ -207,11 +207,11 @@ def reading(request):
 			}) 
 
 		# comparision code / determine correct answer 
-		if str(answer) == spelling_word:
+		if str(answer) == spelling_img_old:
 			my_answer = "Correct!  " + answer + " is the correct spelling."
 			color = "success " # color of the pop up box from boostrap
 		else:
-			my_answer = "Incorrect! The correct spelling is: " + str(spelling_word)
+			my_answer = "Incorrect! The correct spelling is: " + str(spelling_img_old)
 			color = "danger " # color of the pop up box from boostrap
 
 		# CONTEXT DICTIONARY returns to the screen 
@@ -221,7 +221,7 @@ def reading(request):
 			'spelling_word': spelling_word,
 			'color': color, # pass in color for pop up box 
 			}) 
-	# initial start 
+	# initial start
 	return render(request,'reading.html', {
 			'spelling_word': spelling_word,
 			})
