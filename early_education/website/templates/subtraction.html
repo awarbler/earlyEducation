@@ -1,64 +1,68 @@
-{% extends 'base.html' %}
-{% load static %}
-{% block content %}
+{% extends 'base.html' %} {% load static %} {% block content %}
 
-
-
-  <!-- contact section -->
-  <section class="contact_section ">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="d-flex justify-content-center d-md-block">
-            <!-- <h2>
+<!-- contact section -->
+<section class="contact_section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="d-flex justify-content-center d-md-block">
+          <!-- <h2>
               Contact Us
             </h2> -->
-            <center><br/>
-              <h3>Subtraction</h3>
+          <center>
+            <br />
+            <h3>Subtraction</h3>
             <!--add logic  -->
-          <!--add logic  -->
-          {% if my_answer %}
-          <!--pop up box for wrong answer pass in color -->
-          <div class="alert alert-{{ color }} alert-dismissible fade show" role="alert">
-            <strong>Holy guacamole!</strong> {{ my_answer }}
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-          </div>  
-          <!--end logic for pop up box  -->
-          {% endif %}
-          <br/>
-          <br/>
-          <br/>
-          
-              
-              <h1><img src="static/website/images/{{num_1}}.png"> - <img src="static/website/images/{{num_2}}.png"></h1>
-              <br/>
-              <br/><br/>
-          
-              <form action="{% url 'subtraction' %}" method="POST">
-                  {% csrf_token %} <!--1.add a hidden token to protect our form  -->
-          
-            <div class="mb-3">
-              <input type="text" class="form-control" placeholder="Type Your Answer Here" name= "answer" >
-              <input type="hidden" name="old_num_1" value="{{ num_1 }}"> 
-              <input type="hidden" name="old_num_2" value="{{num_2}}"> 
-          
+            <!--add logic  -->
+            {% if my_answer %}
+            <!--pop up box for wrong answer pass in color -->
+            <div
+              class="alert alert-{{ color }} alert-dismissible fade show"
+              role="alert"
+            >
+              <strong>Holy guacamole!</strong> {{ my_answer }}
+              <!-- <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button> -->
             </div>
-          
-            <br/>
-            <button type="submit" class="btn btn-secondary">Submit</button>
-          </form>
-          
-          
-          
-          <br/>
-          </center> 
-          </div>
-          <form action= "{%url 'reading' %}" method="POST">
-            {% csrf_token%}
-            <div class="contact_form-container">
-              <div>
-               
-                <!-- <div>
+            <!--end logic for pop up box  -->
+            {% endif %}
+            <br />
+            <br />
+            <br />
+
+            <h1>
+              <img src="static/website/images/{{num_1}}.png" /> -
+              <img src="static/website/images/{{num_2}}.png" />
+            </h1>
+            <br />
+            <br /><br />
+
+            <form action="{% url 'subtraction' %}" method="POST">
+              {% csrf_token %}
+              <!--1.add a hidden token to protect our form  -->
+
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Type Your Answer Here"
+                  name="answer"
+                />
+                <input type="hidden" name="old_num_1" value="{{ num_1 }}" />
+                <input type="hidden" name="old_num_2" value="{{num_2}}" />
+              </div>
+
+              <br />
+              <button type="submit" class="btn btn-secondary">Submit</button>
+            </form>
+
+            <br />
+          </center>
+        </div>
+        <form action="{%url 'reading' %}" method="POST">
+          {% csrf_token%}
+          <div class="contact_form-container">
+            <div>
+              <!-- <div>
                   <input type="text" name = "messageNames" placeholder="Name">
                 </div>
                 <div>
@@ -70,30 +74,33 @@
                 <div class="mt-5">
                   <input type="text" name="message" placeholder="Message">
                 </div> -->
-                <div class="mt-5">
-                  <!-- <button type="submit">
+              <div class="mt-5">
+                <!-- <button type="submit">
                     send
                   </button> -->
-                </div>
               </div>
-
             </div>
-
-          </form>
-        </div>
-        <div class="col-md-6">
-          <div class="contact_img-box">
-            <img src="{% static 'website/images/students.jpg'%}" alt="">
           </div>
+        </form>
+      </div>
+      <div class="col-md-6">
+        <div class="contact_img-box">
+          <img src="{% static 'website/images/students.jpg'%}" alt="" />
         </div>
       </div>
     </div>
-  </section>
-  <!-- end contact section -->
+  </div>
+</section>
+<!-- end contact section -->
 
 <!-- footer section -->
 {% endblock %}
 
-<script type="text/javascript" src="{% static 'website/js/jquery-3.4.1.min.js'%}"></script>
-<script type="text/javascript" src="{% static 'website/js/bootstrap.js'%}"></script>
-
+<script
+  type="text/javascript"
+  src="{% static 'website/js/jquery-3.4.1.min.js'%}"
+></script>
+<script
+  type="text/javascript"
+  src="{% static 'website/js/bootstrap.js'%}"
+></script>
